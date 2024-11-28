@@ -1,7 +1,16 @@
 * {
     box-sizing:content-box;
+    font-family: "Kanit", sans-serif;
     margin:0;
     padding:0;
+}
+
+.authPage {
+    margin-top:100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .loadingPage__img {
@@ -15,6 +24,12 @@
     top:25%;
     left:42%;
     width:20%;
+    border-radius:50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.authPage__logo {
+    width:10%;
     border-radius:50%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -42,3 +57,36 @@
   @keyframes p6 {
       100% {inset:0}
   }
+
+.authPage__h1 {
+    margin-top:30px;
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+.authButtons {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:75%;
+    margin-right:12.5%;
+    margin-left:12.5%;
+    margin-top:50px;
+    &__btn {
+        width: 300px;
+        height:200px;
+        font-size:27px;
+        border-radius:30px;
+        border: none;
+        background: rgb(20,9,28);
+        background: linear-gradient(0deg, rgba(20,9,28,1) 0%, rgba(117,34,34,1) 24%, rgba(241,60,56,1) 100%); 
+        color:white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
+
+.link {
+    color:rgba(117,34,34,1);
+    font-size:20px;
+    margin-top:80px;
+}
