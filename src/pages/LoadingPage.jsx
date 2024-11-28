@@ -7,6 +7,7 @@ const LoadingPage = () => {
         <div className="loadingPage">
             <img className="loadingPage__img" src={banner} alt="arrière plan d'une pizza d'excellence"></img>
             <img className="loadingPage__logo" src={logo} alt="logo Pizza Planet"></img>
+            <div className="progress-6"></div>
         </div>
     )
 }
